@@ -20,11 +20,8 @@
         #quick{
             position: fixed;
             right: 0;
-            width: 80px;
-            display: flex;
-            flex-direction: column;
-            top: 0;
-            bottom: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
         #quick li{width: 200px;}
         #quick li a{
@@ -32,11 +29,11 @@
             transition: .3s;
         }
         #quick li:hover a{
-            margin-left: -120px;
+            transform: translateX(-100%);
         }
         #quick li i{
             display: inline-block;
-            width: 80px;
+            width: 50px;
         }
         #quick li:nth-child(1) a{
             background-color: #f00;
