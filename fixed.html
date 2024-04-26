@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션_위치</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        header{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            background: #feaaaa;
+            height: 50px;
+            transition: .5s;
+        }
+        header:hover{
+            height: 100px;
+        }
+        aside{
+            background: #6A92FE;
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            right: 30px;
+            bottom:30px;
+            border-radius: 50% 50% 0 0;
+            box-shadow: 5px 5px 5px #666 ;
+            
+        }
+        .quik_img{
+            position: absolute;
+            top:0; right:0;
+            height: 100px;}
+        .d-none{display: none;}
+        .default:hover + .quik_fixed {display: block;}
+    </style>
+</head>
+<body>
+    <header></header>
+    <aside>
+        <img class="quik_img default" src="fixed_dog.png" alt="">
+        <img class="quik_img quik_fixed d-none" src="fixed_dog_talk.png" alt="">
+    </aside>
+    <aside>
+        <div><img src="" alt=""></div>
+        <ul>            
+            <li><a href=""><i></i></a></li>
+            <li><a href=""><i></i></a></li>
+        </ul>
+        <div><a href=""><i></i></a></div>
+    </aside>
+</body>
+</html>

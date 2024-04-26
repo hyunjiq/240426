@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>https://www.7-eleven.co.kr/?mobile</title>
+    <style>
+        body{
+            font-family:  'Noto Sans KR' sans-serif;
+            font-weight: 400;
+            height: 500vh;
+        }
+        li{list-style: none;}        
+        a{text-decoration: none; color: #333;}
+        #quick{
+            position: fixed;
+            right: 0;
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            bottom: 0;
+        }
+        #quick li{width: 200px;}
+        #quick li a{
+            display: block;
+            transition: .3s;
+        }
+        #quick li:hover a{
+            margin-left: -120px;
+        }
+        #quick li i{
+            display: inline-block;
+            width: 80px;
+        }
+        #quick li:nth-child(1) a{
+            background-color: #f00;
+        }
+        #quick li:nth-child(2) a{
+            background-color: #ff8000;
+        }
+        #quick li:nth-child(3) a{
+            background-color: #fff000;
+        }
+        #quick li:nth-child(4) a{
+            background-color: #0f0;
+        }
+        #quick li:nth-child(5) a{
+            background-color: #00f;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <aside id="quick">
+        <ul>
+            <li><a href=""><i class="bi bi-github"></i><strong>깃</strong></a></li>
+            <li><a href=""><i class="bi bi-youtube"></i><strong>유튜브</strong></a></li>
+            <li><a href=""><i class="bi bi-instagram"></i><strong>인스타그램</strong></a></li>
+            <li><a href=""><i class="bi bi-facebook"></i><strong>페이스북</strong></a></li>
+            <li><a href=""><i class="bi bi-arrow-up"></i><strong>위로</strong></a></li>
+        </ul>
+    </aside>
+    <!-- <i class="bi bi-balloon-heart"></i> -->
+</body>
+</html>
